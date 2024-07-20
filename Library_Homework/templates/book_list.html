@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center; /* Center align content */
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .back-link {
+            display: inline-block;
+            padding: 10px 30px;
+            background-color: #fff;
+            color: #654321;
+            border: 2px solid #654321;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px; /* Adjust margin-top for spacing */
+        }
+        .back-link:hover {
+            background-color: #53321d; /* Darker Brown background on hover */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Book List</h2>
+        <table>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Genre</th>
+            </tr>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.publication_year }}</td>
+                <td>{{ book.genre }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a class="back-link" href="{{ url_for('home') }}">Back to Home</a>
+    </div>
+</body>
+</html>

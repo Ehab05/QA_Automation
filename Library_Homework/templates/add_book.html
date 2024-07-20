@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            color: #333;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 30px; /* Adjust padding to match back-to-home link */
+            font-size: 1.2em;
+            color: #654321;
+            background-color: #fff;
+            border: 2px solid #654321; /* Match border to back-to-home link */
+            border-radius: 8px; /* Match border-radius to back-to-home link */
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none; /* Remove default underline */
+            text-align: center; /* Center text horizontally */
+            display: block; /* Make it block-level for easy alignment */
+            margin-bottom: 10px; /* Add margin-bottom for spacing */
+        }
+        input[type="submit"]:hover {
+            background-color: #654321; /* Darker background color on hover */
+            border-color: #53321d; /* Border color on hover */
+            color: #fff
+        }
+        .back-to-home a {
+            padding: 10px 30px;
+            background-color: #fff;
+            color: #654321;
+            border: 2px solid #654321;
+            border-radius: 8px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            display: block; /* Make it block-level for easy alignment */
+            text-align: center; /* Center text horizontally */
+            margin-top: 10px; /* Adjust margin-top for spacing */
+        }
+        .back-to-home a:hover {
+            background-color: #53321d;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add a New Book</h2>
+        <!-- Flash message block -->
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="flash-message">
+              {% for message in messages %}
+                <p>{{ message }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+        <form action="/add" method="POST">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required>
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required>
+            <label for="publication_year">Publication Year</label>
+            <input type="text" id="publication_year" name="publication_year" required>
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre" required>
+            <input type="submit" value="Add Book">
+        </form>
+        <div class="back-to-home">
+            <a href="/">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
