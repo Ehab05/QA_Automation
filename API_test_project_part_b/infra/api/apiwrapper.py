@@ -32,7 +32,7 @@ class APIWrapper:
 
     def delete_request(self, url, headers=None):
         try:
-            return requests.put(url, headers=headers)
+            return requests.delete(url, headers=headers)
         except requests.exceptions.HTTPError as e:
             print(f"Error HTTP:{e}")
         except Exception as e:

@@ -1,8 +1,7 @@
 import unittest
-
-from infra.api.apiwrapper import APIWrapper
-from infra.config_provider import ConfigProvider
-from logic.api.activities import Activities
+from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
+from API_test_project_part_b.infra.config_provider import ConfigProvider
+from API_test_project_part_b.logic.api.activities import Activities
 
 
 class TestFakeRestAPIActivities(unittest.TestCase):
