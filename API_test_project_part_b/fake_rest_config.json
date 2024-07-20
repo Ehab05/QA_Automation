@@ -11,5 +11,12 @@
       "title": "sleep",
       "dueDate": "2024-07-28T15:19:32.536Z",
       "completed": true
-      }
+      },
+  "author_to_update": {
+      "id": "5",
+      "idBook": "15",
+      "firstName": "sam",
+      "lastName": "som"
+  },
+  "author_to_delete": "1"
 }

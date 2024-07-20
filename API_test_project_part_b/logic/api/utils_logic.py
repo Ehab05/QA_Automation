@@ -1,4 +1,4 @@
-from infra.config_provider import ConfigProvider
+from API_test_project_part_b.infra.config_provider import ConfigProvider
 
 
 class Utils:
