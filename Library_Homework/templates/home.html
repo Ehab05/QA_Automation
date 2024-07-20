@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url("{{ url_for('static', filename='uploads/book_bg.jpeg') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 280px;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 2.1em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+        }
+        ul li {
+            text-align: center;
+        }
+        ul li:nth-child(7) { /* Adjust for the last item, in this case, the 7th item */
+            grid-column: 2; /* Aligns with the middle column */
+        }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            color: #654321;
+            font-size: 1.4em;
+            border: 2px solid #654321;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        ul li a:hover {
+            background-color: #954535;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart<br> &nbsp;&nbsp;&nbsp;Library</h1>
+    </header>
+    <div class="container">
+        <h2>Welcome to the Smart Library App</h2>
+        <p>Organize your book collection and enrich your mind. Stay smart!</p>
+        <ul>
+            <li><a href="/add">Add Book</a></li>
+            <li><a href="/list">List All Books</a></li>
+            <li><a href="/search/title">Search by Title</a></li>
+            <li><a href="{{ url_for('edit_book', title='choose') }}">Edit Book</a></li>
+            <li><a href="/delete">Delete Book</a></li>
+            <li><a href="/search/author">Search by Author</a></li>
+            <li><a href="/search_online">Search Books Online</a></li>
+
+        </ul>
+    </div>
+    <footer>
+        &copy; 2024 Smart Library
+    </footer>
+
+    <!-- The Modal -->
+    <div id="editBookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Edit Book</h2>
+            <form id="editBookForm" action="/edit" method="post">
+                <input type="text" name="title" placeholder="Enter book title" required>
+                <input type="text" name="author" placeholder="Enter new author">
+                <input type="number" name="publication_year" placeholder="Enter new publication year">
+                <input type="text" name="genre" placeholder="Enter new genre">
+                <input type="submit" value="Save Changes">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("editBookModal");
+
+        // Get the link that opens the modal
+        var link = document.getElementById("editBookLink");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the link, open the modal
+        link.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

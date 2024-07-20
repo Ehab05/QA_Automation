@@ -1,0 +1,12 @@
+2024-07-16 11:23:31,413 - INFO - _____Test Started_____
+2024-07-16 11:23:40,956 - INFO - The browser that was selected is:Chrome
+2024-07-16 11:23:45,581 - INFO - The phone number for registration is:34324
+2024-07-16 11:23:45,646 - INFO - The username that was generated for registration is:jQodL
+2024-07-16 11:23:45,646 - INFO - The user name for registration is:jQodL
+2024-07-16 11:23:45,712 - INFO - The password that was generated for registration is:v2oj9iFt
+2024-07-16 11:23:45,713 - INFO - The password for registration is:v2oj9iFt
+2024-07-16 11:23:45,828 - INFO - The confirmation password for registration is:v2oj9iFt
+2024-07-16 11:23:46,782 - INFO - The account type that was selected is:SAVINGS
+2024-07-16 11:23:48,455 - ERROR - Failed to select the value:<selenium.webdriver.remote.webelement.WebElement (session="d8ad2c78d7a5492574839e87cbfaf46f", element="f.7C7EA00E1D1C31833B28CC66C294D002.d.9B1D66E24257A0AAA7A7B5C4F0268758.e.146")>
+2024-07-16 11:23:49,023 - ERROR - Failed to select the value of the transfer to account: <selenium.webdriver.remote.webelement.WebElement (session="d8ad2c78d7a5492574839e87cbfaf46f", element="f.7C7EA00E1D1C31833B28CC66C294D002.d.9B1D66E24257A0AAA7A7B5C4F0268758.e.147")>
+2024-07-16 11:23:49,641 - INFO - The title after clicking transfer button is:Transfer Complete!
