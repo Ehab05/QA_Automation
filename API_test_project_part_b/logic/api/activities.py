@@ -1,6 +1,7 @@
 from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
-from API_test_project_part_b.logic.api.entries.post_activity import PostActivity
+from API_test_project_part_b.logic.api.entries.activity_entry import ActivityEntry
+
 from API_test_project_part_b.logic.api.utils_logic import Utils
 
 
@@ -16,7 +17,7 @@ class Activities:
         return response
 
     def post_activity(self):
-        activity = PostActivity(self._config["activity_1"])
+        activity = ActivityEntry(self._config["activity_1"])
         response = self._request.post_request(self._endpoint, activity.activity_to_dict())
         return response
 

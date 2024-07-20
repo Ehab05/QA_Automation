@@ -12,11 +12,30 @@
       "dueDate": "2024-07-28T15:19:32.536Z",
       "completed": true
       },
+  "book_1": {
+      "id": 1,
+      "title": "book 300",
+      "description": "about the movie",
+      "pageCount": "132",
+      "excerpt": "history",
+      "publishDate": "2000-07-17T11:45:21"
+  },
+  "book_to_update": {
+      "id": 1,
+      "title": "book 400",
+      "description": "about the movie",
+      "pageCount": 140,
+      "excerpt": "history",
+      "publishDate": "2000-07-17T03:45:21"
+  },
+  "book_to_delete": 1,
+  "number_of_book_values": 6,
   "author_to_update": {
-      "id": "5",
-      "idBook": "15",
+      "id": 5,
+      "idBook": 15,
       "firstName": "sam",
       "lastName": "som"
   },
-  "author_to_delete": "1"
+  "author_to_delete": "1",
+  "number_of_author_values": 4
 }

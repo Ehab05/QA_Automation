@@ -1,4 +1,4 @@
-class PostActivity:
+class ActivityEntry:
     def __init__(self, activity_from_config):
         self._id = activity_from_config["id"]
         self._title = activity_from_config["title"]
