@@ -1,4 +1,4 @@
-class UpdateAuthor:
+class AuthorEntry:
     def __init__(self, author_from_config):
         self._id = author_from_config["id"]
         self._idbook = author_from_config["idBook"]

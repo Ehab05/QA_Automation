@@ -17,12 +17,12 @@ class TestFakeRestAPIAuthor(unittest.TestCase):
         self.assertIsInstance(authors.json(), list)
         for author in authors.json():
             self.assertIsInstance(author, dict)
-            self.assertEqual(4, len(author))
+            self.assertEqual(self._config["number_of_author_values"], len(author))
 
     def test_update_author_by_id(self):
         update_author = Authors(self._request).update_author_by_id(self._config["author_to_update"]["id"])
         self.assertEqual(200, update_author.status_code)
-        self.assertTrue(len(update_author.json()) == 4)
+        self.assertEqual(self._config["author_to_update"], update_author.json())
 
     def test_delete_author(self):
         authors = Authors(self._request).get_all_authors()
