@@ -16,10 +16,14 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         self.assertIsInstance(books.json(), list)
         for book in books.json():
             self.assertIsInstance(book, dict)
-            self.assertEqual(self._config["number_of_book_values"], len(book))
+            self.assertEqual(self._config["number_of_book_keyvalues"], len(book))
 
     def test_get_book_by_id(self):
-        pass
+        book = Books(self._request).get_book_by_id(self._config["get_book_id"])
+        self.assertEqual(200, book.status_code)
+        self.assertTrue(book.json()["id"] == self._config["get_book_id"])
+        self.assertIsInstance(book.json()["title"], str)
+        self.assertIsInstance(book.json()["pageCount"], int)
 
     def test_post_book(self):
         book = Books(self._request)
@@ -30,7 +34,7 @@ class TestFakeRestAPIBooks(unittest.TestCase):
     def test_update_book_by_id(self):
         update_book = Books(self._request).update_book_by_id(self._config["book_to_update"]["id"])
         self.assertEqual(200, update_book.status_code)
-        self.assertEqual(self._config["book_to_update"], update_book.json())
+        self.assertDictEqual(self._config["book_to_update"], update_book.json())
 
     def test_delete_book(self):
         books = Books(self._request).get_all_books()

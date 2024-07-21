@@ -6,7 +6,6 @@ from API_test_project_part_b.logic.api.utils_logic import Utils
 
 class Authors:
     def __init__(self, request: APIWrapper):
-        super().__init__()
         self._request = request
         self._endpoint = Utils().get_url_with_endpoint("Authors")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
@@ -17,11 +16,11 @@ class Authors:
 
     def get_author_by_id(self, author_id):
         response = self._request.get_request(f"{self._endpoint}/{author_id}")
-        return response.json()
+        return response
 
     def post_author(self):
         author = AuthorEntry(self._config["author_1"])
-        response = self._request.post_request(self._endpoint, author)
+        response = self._request.post_request(self._endpoint, author.author_to_dict())
         return response
 
     def update_author_by_id(self, author_id):
