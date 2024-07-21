@@ -1,8 +1,14 @@
 {
   "base_url": "https://fakerestapi.azurewebsites.net/api/v1/",
-  "activity_1": {
+  "valid_activity_1": {
       "id": "01",
       "title": "read",
+      "dueDate": "2024-07-28T15:19:32.536Z",
+      "completed": true
+      },
+  "invalid_activity_1": {
+      "id": "01",
+      "title": 23,
       "dueDate": "2024-07-28T15:19:32.536Z",
       "completed": true
       },
@@ -12,6 +18,10 @@
       "dueDate": "2024-07-28T15:19:32.536Z",
       "completed": true
       },
+  "activity_to_delete": 1,
+  "get_activity_id": 6,
+  "error_message": "errors",
+  "get_book_id": 1,
   "book_1": {
       "id": 1,
       "title": "book 300",
@@ -29,7 +39,14 @@
       "publishDate": "2000-07-17T03:45:21"
   },
   "book_to_delete": 1,
-  "number_of_book_values": 6,
+  "number_of_book_keyvalues": 6,
+  "get_author_id": 1,
+  "author_1": {
+        "id": 234,
+        "idBook": 444,
+        "firstName": "jameel",
+        "lastName": "ali"
+  },
   "author_to_update": {
       "id": 5,
       "idBook": 15,
@@ -37,5 +54,5 @@
       "lastName": "som"
   },
   "author_to_delete": "1",
-  "number_of_author_values": 4
+  "number_of_author_keyvalues": 4
 }

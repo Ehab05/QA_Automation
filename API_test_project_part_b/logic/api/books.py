@@ -6,7 +6,6 @@ from API_test_project_part_b.logic.api.utils_logic import Utils
 
 class Books:
     def __init__(self, request: APIWrapper):
-        super().__init__()
         self._request = request
         self._endpoint = Utils().get_url_with_endpoint("Books")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
@@ -17,11 +16,11 @@ class Books:
 
     def get_book_by_id(self, book_id):
         response = self._request.get_request(f"{self._endpoint}/{book_id}")
-        return response.json()
+        return response
 
     def post_book(self):
         book = BookEntry(self._config["book_1"])
-        response = self._request.post_request(self._endpoint, book)
+        response = self._request.post_request(self._endpoint, book.book_to_dict())
         return response
 
     def update_book_by_id(self, book_id):
