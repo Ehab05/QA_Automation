@@ -80,7 +80,7 @@ class TestFakeRestAPIBooks(unittest.TestCase):
     def test_delete_book(self):
         """
             Test case: 016
-            Verify successful deletion of an author by its ID
+            Verify successful deletion of a book by its ID
         """
         # Getting all books for the successful deletion check
         books = Books(self._request).get_all_books()
