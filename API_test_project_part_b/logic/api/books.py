@@ -5,6 +5,10 @@ from API_test_project_part_b.logic.api.utils_logic import Utils
 
 
 class Books:
+    """
+            This class contains functions that the user can use to perform CRUD operations
+            on the Books section in the fake rest API website
+        """
     def __init__(self, request: APIWrapper):
         self._request = request
         self._endpoint = Utils().get_url_with_endpoint("Books")

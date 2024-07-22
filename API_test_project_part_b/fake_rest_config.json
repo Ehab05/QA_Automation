@@ -1,11 +1,6 @@
 {
   "base_url": "https://fakerestapi.azurewebsites.net/api/v1/",
-  "valid_activity_1": {
-      "id": "01",
-      "title": "read",
-      "dueDate": "2024-07-28T15:19:32.536Z",
-      "completed": true
-      },
+  "activity_title_length": 5,
   "invalid_activity_1": {
       "id": "01",
       "title": 23,
@@ -19,7 +14,7 @@
       "completed": true
       },
   "activity_to_delete": 1,
-  "get_activity_id": 6,
+  "activity_id_range": [1,30],
   "error_message": "errors",
   "get_book_id": 1,
   "book_1": {

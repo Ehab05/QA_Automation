@@ -1,0 +1,10 @@
+2024-07-22 14:31:37,757 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 13, 'title': 'fOA4E', 'dueDate': '2049-10-01T01:00:23.205Z', 'completed': False}
+2024-07-22 15:18:35,000 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 1, 'title': 'nXp"u', 'dueDate': '2032-09-05T11:34:22.917Z', 'completed': True}
+2024-07-22 15:20:06,396 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': 'D?\\%?', 'dueDate': '2044-10-29T13:55:32.951326+00:00', 'completed': False}
+2024-07-22 15:21:57,686 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-c815f57517cc994cbcf85f9d82cdf26f-c8045b8250a3674b-00', 'errors': {'$.completed': ['The JSON value could not be converted to System.Boolean. Path: $.completed | LineNumber: 0 | BytePositionInLine: 95.']}}
+2024-07-22 15:23:23,754 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 14, 'title': '\\{#q^', 'dueDate': '2049-10-31T19:57:50.858655+00:00', 'completed': False}
