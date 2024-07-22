@@ -5,7 +5,15 @@ from API_test_project_part_b.logic.api.utils_logic import Utils
 
 
 class Authors:
+    """
+        This class contains functions that the user can use to perform CRUD operations
+        on the Authors section in the fake rest API website
+    """
     def __init__(self, request: APIWrapper):
+        """
+            self._endpoint attribute returns the complete url for the endpoint
+            APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
+        """
         self._request = request
         self._endpoint = Utils().get_url_with_endpoint("Authors")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
@@ -33,4 +41,5 @@ class Authors:
         response = self._request.delete_request(f"{self._endpoint}/{author_id}", headers=headers)
         print(self._request)
         return response
+
 

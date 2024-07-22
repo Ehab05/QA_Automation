@@ -1,4 +1,5 @@
 import logging
+import os
 
 
 class Logger:
@@ -11,8 +12,10 @@ class Logger:
         self._logger = logging.getLogger(name)
         self._logger.setLevel(logging.INFO)
 
-        formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-        handler = logging.FileHandler('fake_rest_api.log')
+        formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s \n- %(module)s - %(filename)s - %("
+                                      "funcName)s - %(message)s")
+        log_file_path = os.path.join("../../" 'fake_rest_api.log')
+        handler = logging.FileHandler(log_file_path)
         handler.setFormatter(formatter)
         self._logger.addHandler(handler)
 

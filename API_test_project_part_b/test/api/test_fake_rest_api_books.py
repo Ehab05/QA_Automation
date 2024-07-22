@@ -3,6 +3,7 @@ import unittest
 from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.logic.api.books import Books
+from API_test_project_part_b.logic.api.utils_logic import Utils
 
 
 class TestFakeRestAPIBooks(unittest.TestCase):
@@ -41,3 +42,5 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         book = Books(self._request).delete_book_by_id(self._config["book_to_delete"])
         self.assertEqual(200, book.status_code)
         self.assertFalse(self._config["book_to_delete"] in books.json())
+
+
