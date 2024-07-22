@@ -86,7 +86,7 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         books = Books(self._request).get_all_books()
         # Generating a random book ID within the accepted range
         book_id = Utils().generate_random_number_within_range(tuple(self._config["book_id_range"]))
-        # Deleting the author by its id
+        # Deleting the author by its ID
         book = Books(self._request).delete_book_by_id(book_id)
         self.assertEqual(200, book.status_code)
         self.assertFalse(book_id in books.json())
