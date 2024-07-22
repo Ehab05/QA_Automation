@@ -19,6 +19,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             Test case: 001
             Verify successful fetching of all activities
         """
+        # Getting all the activities from the API
         all_activities = Activities(self._request).get_all_activities()
         # Asserting response status code of the Get request and the type of the response body
         self.assertEqual(200, all_activities.status_code)
@@ -46,6 +47,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         """
         # Initialize valid activity to post
         activity = Activities(self._request)
+        # Generating a valid activity
         valid_activity = ActivityEntry().activity_to_dict()
         # Updating the new data of the activity
         response = activity.post_activity(valid_activity)
@@ -79,7 +81,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         # Initialize valid activity to update
         updated_activity = ActivityEntry().updated_activity(activity_id)
         # Updating the new data for the activity by the chosen id
-        response = activity.update_activity(activity_id, updated_activity)
+        response = activity.update_activity_by_id(activity_id, updated_activity)
         # Asserting the response status code and completed and title fields of the response body
         self.assertEqual(200, response.status_code)
         self.assertIsInstance(response.json().get('completed'), bool)
@@ -100,7 +102,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         self.assertEqual(200, activities.status_code)
         self.assertEqual(200, activity.status_code)
         # Asserting that after deletion the deleted activity is not in the activity list
-        self.assertFalse(self._config["activity_to_delete"] in activities.json())
+        self.assertFalse(activity_id in activities.json())
 
 
 

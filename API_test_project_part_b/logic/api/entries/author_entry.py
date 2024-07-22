@@ -1,9 +1,17 @@
+from API_test_project_part_b.infra.config_provider import ConfigProvider
+from API_test_project_part_b.infra.utils import Utils
+
+
 class AuthorEntry:
-    def __init__(self, author_from_config):
-        self._id = author_from_config["id"]
-        self._idbook = author_from_config["idBook"]
-        self._first_name = author_from_config["firstName"]
-        self._last_name = author_from_config["lastName"]
+    def __init__(self):
+        """
+            This class initialize a random activity
+        """
+        self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
+        self._id = Utils().generate_random_number_within_range(tuple(self._config["author_id_range"]))
+        self._idbook = Utils().generate_random_number_within_range(tuple(self._config["idbook_range"]))
+        self._first_name = Utils().generate_random_string(8)
+        self._last_name = Utils().generate_random_string(8)
 
     @property
     def id(self):
@@ -24,6 +32,17 @@ class AuthorEntry:
     def author_to_dict(self):
         return {
             "id": self._id,
+            "idBook": self._idbook,
+            "firstName": self._first_name,
+            "lastName": self._last_name
+        }
+
+    def updated_author_by_id(self, author_id):
+        """
+            This function generate a random author with the same given ID
+        """
+        return {
+            "id": author_id,
             "idBook": self._idbook,
             "firstName": self._first_name,
             "lastName": self._last_name
