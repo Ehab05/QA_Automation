@@ -1,7 +1,8 @@
 from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
+from API_test_project_part_b.infra.logger import Logger
 from API_test_project_part_b.logic.api.entries.author_entry import AuthorEntry
-from API_test_project_part_b.logic.api.utils_logic import Utils
+from API_test_project_part_b.logic.api.utils_logic import UtilsLogic
 
 
 class Authors:
@@ -15,25 +16,39 @@ class Authors:
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = request
-        self._endpoint = Utils().get_url_with_endpoint("Authors")
+        self._endpoint = UtilsLogic().get_url_with_endpoint("Authors")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
+        self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_authors(self):
         response = self._request.get_request(self._endpoint)
         return response
 
     def get_author_by_id(self, author_id):
+        """
+            Get a specific author by its ID from the API
+            :param author_id:
+            :return: HTTP GET response
+        """
         response = self._request.get_request(f"{self._endpoint}/{author_id}")
+        self._logger.info(f"The generated activity id is:{author_id} ")
         return response
 
-    def post_author(self):
-        author = AuthorEntry(self._config["author_1"])
-        response = self._request.post_request(self._endpoint, author.author_to_dict())
+    def post_author(self, valid_author):
+        """
+            Creates a new author by posting the provided data to the API.
+        """
+        response = self._request.post_request(self._endpoint, valid_author)
+        self._logger.info(f"{response.json()}")
         return response
 
-    def update_author_by_id(self, author_id):
-        author_update = AuthorEntry(self._config["author_to_update"])
-        response = self._request.put_request(f"{self._endpoint}/{author_id}", author_update.author_to_dict())
+    def update_author_by_id(self, author_id, updated_author):
+        """
+            Updates a specific author by its ID from the data in the configuration
+            :param: Activity id and new activity data to update
+            :return: HTTP PUT response
+        """
+        response = self._request.put_request(f"{self._endpoint}/{author_id}", updated_author)
         return response
 
     def delete_author_by_id(self, author_id):

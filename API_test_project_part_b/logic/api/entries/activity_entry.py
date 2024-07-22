@@ -4,6 +4,9 @@ from API_test_project_part_b.infra.utils import Utils
 
 class ActivityEntry:
     def __init__(self):
+        """
+        This class initialize a random activity
+        """
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
         self._id = Utils().generate_random_number_within_range(tuple(self._config["activity_id_range"]))
         self._title = Utils().generate_random_string(self._config["activity_title_length"])
@@ -38,6 +41,9 @@ class ActivityEntry:
         }
 
     def get_invalid_activity(self):
+        """
+            This function generates a random invalid activity by switching the values of the ID and title
+        """
         return {
             "id": self._title,
             "title": self._id,
@@ -46,6 +52,9 @@ class ActivityEntry:
         }
 
     def updated_activity(self, activity_id):
+        """
+            This function generate a random activity with the same given ID
+        """
         return {
             "id": activity_id,
             "title": self._title,

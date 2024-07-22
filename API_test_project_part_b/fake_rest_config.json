@@ -1,53 +1,12 @@
 {
   "base_url": "https://fakerestapi.azurewebsites.net/api/v1/",
   "activity_title_length": 5,
-  "invalid_activity_1": {
-      "id": "01",
-      "title": 23,
-      "dueDate": "2024-07-28T15:19:32.536Z",
-      "completed": true
-      },
-  "activity_to_update": {
-      "id": "01",
-      "title": "sleep",
-      "dueDate": "2024-07-28T15:19:32.536Z",
-      "completed": true
-      },
-  "activity_to_delete": 1,
   "activity_id_range": [1,30],
   "error_message": "errors",
-  "get_book_id": 1,
-  "book_1": {
-      "id": 1,
-      "title": "book 300",
-      "description": "about the movie",
-      "pageCount": "132",
-      "excerpt": "history",
-      "publishDate": "2000-07-17T11:45:21"
-  },
-  "book_to_update": {
-      "id": 1,
-      "title": "book 400",
-      "description": "about the movie",
-      "pageCount": 140,
-      "excerpt": "history",
-      "publishDate": "2000-07-17T03:45:21"
-  },
-  "book_to_delete": 1,
+  "book_id_range": [1,200],
+  "pagecount_range": [100, 20000],
   "number_of_book_keyvalues": 6,
-  "get_author_id": 1,
-  "author_1": {
-        "id": 234,
-        "idBook": 444,
-        "firstName": "jameel",
-        "lastName": "ali"
-  },
-  "author_to_update": {
-      "id": 5,
-      "idBook": 15,
-      "firstName": "sam",
-      "lastName": "som"
-  },
-  "author_to_delete": "1",
+  "author_id_range": [1,589],
+  "idbook_range": [1,200],
   "number_of_author_keyvalues": 4
 }
