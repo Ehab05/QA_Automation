@@ -1,31 +1,39 @@
 # QA_Automation
 API Testing Project
 Overview
-This project is an API testing suite developed to interact with the FakeRestAPI. It performs CRUD operations on the API endpoints for activities, authors, and books, using Python and associated libraries.
+This project is an API testing suite developed to interact with the FakeRestAPI. It performs CRUD operations on the API 
+endpoints for activities, authors, and books, using Python and associated libraries.
 
 Features
 CRUD Operations: Create, Read, Update, and Delete operations for Activities, Authors, and Books.
 Data Generation: Random data generation for testing purposes.
 Configurable Endpoints: Endpoints and configurations are specified in a JSON configuration file.
-Logging: Logs API interactions and results.
+Logging: Logs API interactions and results also generated data.
+
 Technologies Used
 Python: Programming language used.
 Requests: For making HTTP requests.
 Pytest: For running tests and assertions.
 Postman: For manual API testing and validation.
 Pytz: For handling time zones and datetime operations.
-Installation:
 
+Installation:
 Clone the repository:
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/Ehab05/QA_Automation/tree/project_branch/API_test_project_part_b
+cd API_test_project_part_b
 
 Set up a virtual environment:
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 
 Install dependencies:
-pip install -r requirements.txt
+pip install:
+"pytest" for running tests.
+"pytz" for handling time zones.
+"jsonschema" for JSON validation (if you're using it).
+"attrs" for easier class definitions and validations.
+"iniconfig", "packaging", "pluggy", "pycparser" for pytest and its dependencies.
+"certifi", "charset-normalizer", "idna", "urllib3" as dependencies of requests
 
 Ensure the configuration file is in place:
 Place the fake_rest_config.json file in the appropriate directory (../../fake_rest_config.json).
