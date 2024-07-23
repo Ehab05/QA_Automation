@@ -1,8 +1,9 @@
 # QA_Automation
 API Testing Project
 Overview
-This project is an API testing suite developed to interact with the FakeRestAPI. It performs CRUD operations on the API 
+This project is an API testing suite developed to interact with the FakeRestAPI which is designed to simulate basic user-related operations such as fetching user details, creating a new user, and deleting a user.. It performs CRUD operations on the API 
 endpoints for activities, authors, and books, using Python and associated libraries.
+FakeRestAPI link: https://fakerestapi.azurewebsites.net/index.html
 
 Features
 CRUD Operations: Create, Read, Update, and Delete operations for Activities, Authors, and Books.
