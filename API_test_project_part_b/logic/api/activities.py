@@ -22,8 +22,12 @@ class Activities:
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_activities(self):
-        response = self._request.get_request(self._endpoint)
-        return response
+        try:
+            response = self._request.get_request(self._endpoint)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error getting all activities")
+            return None
 
     def get_activity_by_id(self, activity_id):
         """
@@ -31,17 +35,25 @@ class Activities:
         :param activity_id:
         :return: HTTP GET response
         """
-        response = self._request.get_request(f"{self._endpoint}/{activity_id}")
-        self._logger.info(f"The generated activity id is:{activity_id} ")
-        return response
+        try:
+            response = self._request.get_request(f"{self._endpoint}/{activity_id}")
+            self._logger.info(f"The generated activity id is:{activity_id} ")
+            return response
+        except Exception as e:
+            self._logger.error(f"Error getting the activity by id:{e}")
+            return None
 
     def post_activity(self, valid_activity):
         """
                 Creates a new activity by posting the provided data to the API.
         """
-        response = self._request.post_request(self._endpoint, valid_activity)
-        self._logger.info(f"{response.json()}")
-        return response
+        try:
+            response = self._request.post_request(self._endpoint, valid_activity)
+            self._logger.info(f"{response.json()}")
+            return response
+        except Exception as e:
+            self._logger.error(f"Error posting activity: {e}")
+            return None
 
     def update_activity_by_id(self, activity_id, updated_activity):
         """
@@ -49,10 +61,18 @@ class Activities:
         :param: Activity id and new activity data to update
         :return: HTTP PUT response
         """
-        response = self._request.put_request(f"{self._endpoint}/{activity_id}", updated_activity)
-        return response
+        try:
+            response = self._request.put_request(f"{self._endpoint}/{activity_id}", updated_activity)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error updating activity by id: {e}")
+            return None
 
     def delete_activity_by_id(self, activity_id):
-        headers = {"Content-Type": "application/json"}
-        response = self._request.delete_request(f"{self._endpoint}/{activity_id}", headers=headers)
-        return response
+        try:
+            headers = {"Content-Type": "application/json"}
+            response = self._request.delete_request(f"{self._endpoint}/{activity_id}", headers=headers)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error deleting activity by id: {e}")
+            return None

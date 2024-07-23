@@ -21,8 +21,12 @@ class Authors:
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_authors(self):
-        response = self._request.get_request(self._endpoint)
-        return response
+        try:
+            response = self._request.get_request(self._endpoint)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error getting all authors")
+            return None
 
     def get_author_by_id(self, author_id):
         """
@@ -30,17 +34,25 @@ class Authors:
             :param author_id:
             :return: HTTP GET response
         """
-        response = self._request.get_request(f"{self._endpoint}/{author_id}")
-        self._logger.info(f"The generated activity id is:{author_id} ")
-        return response
+        try:
+            response = self._request.get_request(f"{self._endpoint}/{author_id}")
+            self._logger.info(f"The generated activity id is:{author_id} ")
+            return response
+        except Exception as e:
+            self._logger.error(f"Error getting the author by id:{e}")
+            return None
 
     def post_author(self, valid_author):
         """
             Creates a new author by posting the provided data to the API.
         """
-        response = self._request.post_request(self._endpoint, valid_author)
-        self._logger.info(f"{response.json()}")
-        return response
+        try:
+            response = self._request.post_request(self._endpoint, valid_author)
+            self._logger.info(f"{response.json()}")
+            return response
+        except Exception as e:
+            self._logger.error(f"Error posting author: {e}")
+            return None
 
     def update_author_by_id(self, author_id, updated_author):
         """
@@ -48,13 +60,22 @@ class Authors:
             :param: Activity id and new activity data to update
             :return: HTTP PUT response
         """
-        response = self._request.put_request(f"{self._endpoint}/{author_id}", updated_author)
-        return response
+        try:
+            response = self._request.put_request(f"{self._endpoint}/{author_id}", updated_author)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error updating author by id: {e}")
+            return None
 
     def delete_author_by_id(self, author_id):
-        headers = {"Content-Type": "application/json"}
-        response = self._request.delete_request(f"{self._endpoint}/{author_id}", headers=headers)
-        print(self._request)
-        return response
+        try:
+            headers = {"Content-Type": "application/json"}
+            response = self._request.delete_request(f"{self._endpoint}/{author_id}", headers=headers)
+            print(self._request)
+            return response
+        except Exception as e:
+            self._logger.error(f"Error deleting author by id: {e}")
+            return None
+
 
 
