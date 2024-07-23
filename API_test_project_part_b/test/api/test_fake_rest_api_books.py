@@ -18,6 +18,7 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         """
         # Getting all authors from the API
         books = Books(self._request).get_all_books()
+
         # Asserting the response status code and type
         self.assertEqual(200, books.status_code)
         self.assertIsInstance(books.json(), list)
@@ -34,7 +35,9 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         # Generating a random book ID within the accepted range
         book_id = Utils().generate_random_number_within_range(tuple(self._config["book_id_range"]))
         # Getting the book by its id
+
         book = Books(self._request).get_book_by_id(book_id)
+
         # Asserting the response status code
         self.assertEqual(200, book.status_code)
         # Asserting that the response body id matched the given id with the request
@@ -52,8 +55,10 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         book = Books(self._request)
         # Generating a valid book
         valid_book = BookEntry().book_to_dict()
+
         # Posting the generated book
         response = book.post_book(valid_book)
+
         # Asserting the response status code
         self.assertEqual(200, response.status_code)
         # Asserting the response body id type
@@ -68,10 +73,12 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         book = Books(self._request)
         # Generating a random book ID within the accepted range
         book_id = Utils().generate_random_number_within_range(tuple(self._config["book_id_range"]))
+
         # Generating data for updating the book with the given id
         update_book = BookEntry().updated_book_by_id(book_id)
         # Updating new data for the book
         response = book.update_book_by_id(book_id, update_book)
+
         # Asserting the response status code
         self.assertEqual(200, response.status_code)
         # Asserting if the response body match the newly updated data
@@ -86,7 +93,9 @@ class TestFakeRestAPIBooks(unittest.TestCase):
         books = Books(self._request).get_all_books()
         # Generating a random book ID within the accepted range
         book_id = Utils().generate_random_number_within_range(tuple(self._config["book_id_range"]))
+
         # Deleting the author by its ID
         book = Books(self._request).delete_book_by_id(book_id)
+
         self.assertEqual(200, book.status_code)
         self.assertFalse(book_id in books.json())
