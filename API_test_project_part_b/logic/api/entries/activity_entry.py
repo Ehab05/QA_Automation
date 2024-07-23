@@ -9,7 +9,7 @@ class ActivityEntry:
         """
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
         self._id = Utils().generate_random_number_within_range(tuple(self._config["activity_id_range"]))
-        self._title = Utils().generate_random_string(self._config["activity_title_length"])
+        self._title = Utils().generate_random_string(8)
         self._duedate = Utils().generate_random_iso_datetime()
         self._completed = Utils().random_boolean()
 
