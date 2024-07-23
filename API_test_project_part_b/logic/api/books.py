@@ -1,8 +1,6 @@
 from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.logger import Logger
-from API_test_project_part_b.logic.api.entries.book_entry import BookEntry
-from API_test_project_part_b.infra.utils import Utils
 from API_test_project_part_b.logic.api.utils_logic import UtilsLogic
 
 
