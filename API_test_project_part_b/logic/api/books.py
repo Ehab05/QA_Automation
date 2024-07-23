@@ -12,17 +12,17 @@ class Books:
 
     def __init__(self, request: APIWrapper):
         """
-            self._endpoint attribute returns the complete url for the endpoint
+            self._url attribute returns the complete url for the endpoint
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = request
-        self._endpoint = UtilsLogic().get_url_with_endpoint("Books")
+        self._url = UtilsLogic().get_url_with_endpoint("Books")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_books(self):
         try:
-            response = self._request.get_request(self._endpoint)
+            response = self._request.get_request(self._url)
             return response
         except Exception as e:
             self._logger.error(f"Error getting all books")
@@ -30,7 +30,7 @@ class Books:
 
     def get_book_by_id(self, book_id):
         try:
-            response = self._request.get_request(f"{self._endpoint}/{book_id}")
+            response = self._request.get_request(f"{self._url}/{book_id}")
             return response
         except Exception as e:
             self._logger.error(f"Error getting the book by id:{e}")
@@ -38,7 +38,7 @@ class Books:
 
     def post_book(self, valid_book):
         try:
-            response = self._request.post_request(self._endpoint, valid_book)
+            response = self._request.post_request(self._url, valid_book)
             return response
         except Exception as e:
             self._logger.error(f"Error posting activity: {e}")
@@ -46,7 +46,7 @@ class Books:
 
     def update_book_by_id(self, book_id, valid_book):
         try:
-            response = self._request.put_request(f"{self._endpoint}/{book_id}", valid_book)
+            response = self._request.put_request(f"{self._url}/{book_id}", valid_book)
             return response
         except Exception as e:
             self._logger.error(f"Error updating book by id: {e}")
@@ -55,7 +55,7 @@ class Books:
     def delete_book_by_id(self, book_id):
         try:
             headers = {"Content-Type": "application/json"}
-            response = self._request.delete_request(f"{self._endpoint}/{book_id}", headers=headers)
+            response = self._request.delete_request(f"{self._url}/{book_id}", headers=headers)
             return response
         except Exception as e:
             self._logger.error(f"Error deleting book by id: {e}")

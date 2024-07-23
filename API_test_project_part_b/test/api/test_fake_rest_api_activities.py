@@ -1,5 +1,6 @@
 import unittest
 from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
+from API_test_project_part_b.infra.api.responsewrapper import ResponseWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.utils import Utils
 from API_test_project_part_b.logic.api.activities import Activities
@@ -21,10 +22,11 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         """
         # Getting all the activities from the API
         all_activities = Activities(self._request).get_all_activities()
+        all_activities_response = ResponseWrapper(200, all_activities.status_code, all_activities.json())
 
         # Asserting response status code of the Get request and the type of the response body
-        self.assertEqual(200, all_activities.status_code)
-        self.assertIsInstance(all_activities.json(), list)
+        self.assertEqual(200, all_activities_response.status_code)
+        self.assertIsInstance(all_activities_response.data, list)
 
     def test_get_activity_by_id(self):
         """

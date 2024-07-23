@@ -11,17 +11,17 @@ class Authors:
     """
     def __init__(self, request: APIWrapper):
         """
-            self._endpoint attribute returns the complete url for the endpoint
+            self._url attribute returns the complete url for the endpoint
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = request
-        self._endpoint = UtilsLogic().get_url_with_endpoint("Authors")
+        self._url = UtilsLogic().get_url_with_endpoint("Authors")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_authors(self):
         try:
-            response = self._request.get_request(self._endpoint)
+            response = self._request.get_request(self._url)
             return response
         except Exception as e:
             self._logger.error(f"Error getting all authors")
@@ -34,7 +34,7 @@ class Authors:
             :return: HTTP GET response
         """
         try:
-            response = self._request.get_request(f"{self._endpoint}/{author_id}")
+            response = self._request.get_request(f"{self._url}/{author_id}")
             self._logger.info(f"The generated activity id is:{author_id} ")
             return response
         except Exception as e:
@@ -46,7 +46,7 @@ class Authors:
             Creates a new author by posting the provided data to the API.
         """
         try:
-            response = self._request.post_request(self._endpoint, valid_author)
+            response = self._request.post_request(self._url, valid_author)
             self._logger.info(f"{response.json()}")
             return response
         except Exception as e:
@@ -60,7 +60,7 @@ class Authors:
             :return: HTTP PUT response
         """
         try:
-            response = self._request.put_request(f"{self._endpoint}/{author_id}", updated_author)
+            response = self._request.put_request(f"{self._url}/{author_id}", updated_author)
             return response
         except Exception as e:
             self._logger.error(f"Error updating author by id: {e}")
@@ -69,7 +69,7 @@ class Authors:
     def delete_author_by_id(self, author_id):
         try:
             headers = {"Content-Type": "application/json"}
-            response = self._request.delete_request(f"{self._endpoint}/{author_id}", headers=headers)
+            response = self._request.delete_request(f"{self._url}/{author_id}", headers=headers)
             print(self._request)
             return response
         except Exception as e:
