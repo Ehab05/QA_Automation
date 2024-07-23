@@ -13,17 +13,17 @@ class Activities:
 
     def __init__(self, request: APIWrapper):
         """
-            self._endpoint attribute returns the complete url for the endpoint
+            self._url attribute returns the complete url for the endpoint
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = request
-        self._endpoint = UtilsLogic().get_url_with_endpoint("Activities")
+        self._url = UtilsLogic().get_url_with_endpoint("Activities")
         self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_activities(self):
         try:
-            response = self._request.get_request(self._endpoint)
+            response = self._request.get_request(self._url)
             return response
         except Exception as e:
             self._logger.error(f"Error getting all activities")
@@ -36,7 +36,7 @@ class Activities:
         :return: HTTP GET response
         """
         try:
-            response = self._request.get_request(f"{self._endpoint}/{activity_id}")
+            response = self._request.get_request(f"{self._url}/{activity_id}")
             self._logger.info(f"The generated activity id is:{activity_id} ")
             return response
         except Exception as e:
@@ -48,7 +48,7 @@ class Activities:
                 Creates a new activity by posting the provided data to the API.
         """
         try:
-            response = self._request.post_request(self._endpoint, valid_activity)
+            response = self._request.post_request(self._url, valid_activity)
             self._logger.info(f"{response.json()}")
             return response
         except Exception as e:
@@ -62,7 +62,7 @@ class Activities:
         :return: HTTP PUT response
         """
         try:
-            response = self._request.put_request(f"{self._endpoint}/{activity_id}", updated_activity)
+            response = self._request.put_request(f"{self._url}/{activity_id}", updated_activity)
             return response
         except Exception as e:
             self._logger.error(f"Error updating activity by id: {e}")
@@ -71,7 +71,7 @@ class Activities:
     def delete_activity_by_id(self, activity_id):
         try:
             headers = {"Content-Type": "application/json"}
-            response = self._request.delete_request(f"{self._endpoint}/{activity_id}", headers=headers)
+            response = self._request.delete_request(f"{self._url}/{activity_id}", headers=headers)
             return response
         except Exception as e:
             self._logger.error(f"Error deleting activity by id: {e}")

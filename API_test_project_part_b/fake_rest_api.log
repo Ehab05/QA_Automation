@@ -1,0 +1,64 @@
+2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:5 
+2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:5 
+2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:5 
+2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:5 
+2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:5 
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
