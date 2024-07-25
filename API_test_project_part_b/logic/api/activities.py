@@ -1,8 +1,7 @@
-from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
+from API_test_project_part_b.infra.api.api_wrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.logger import Logger
 from API_test_project_part_b.logic.api.utils_logic import UtilsLogic
-
 
 
 class Activities:
@@ -43,13 +42,13 @@ class Activities:
             self._logger.error(f"Error getting the activity by id:{e}")
             return None
 
-    def post_activity(self, valid_activity):
+    def post_activity(self, activity):
         """
                 Creates a new activity by posting the provided data to the API.
         """
         try:
-            response = self._request.post_request(self._url, valid_activity)
-            self._logger.info(f"{response.json()}")
+            response = self._request.post_request(self._url, body=activity)
+            self._logger.info(f"{response.data}")
             return response
         except Exception as e:
             self._logger.error(f"Error posting activity: {e}")

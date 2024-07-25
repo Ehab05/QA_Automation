@@ -1,4 +1,5 @@
 import datetime
+import os
 import random
 import string
 import pytz
@@ -9,7 +10,9 @@ from API_test_project_part_b.infra.logger import Logger
 
 class Utils:
     def __init__(self):
-        self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
+        self._config = ConfigProvider.load_from_file(config_file_path)
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def generate_random_number_within_range(self, range_values: tuple):
@@ -61,8 +64,10 @@ class Utils:
             # Combine date and time
             random_datetime = random_date + random_time
 
+            # Convert microseconds to milliseconds
+            milliseconds = random_microseconds // 1000
             # Format the datetime as ISO 8601 string
-            iso_datetime_string = random_datetime.strftime('%Y-%m-%dT%H:%M:%S.') + f"{random_microseconds:06d}" + "+00:00"
+            iso_datetime_string = random_datetime.strftime('%Y-%m-%dT%H:%M:%S.') + f"{milliseconds:03d}" + "+00:00"
             return iso_datetime_string
         except Exception as e:
             self._logger.error(f"Error generating a random date: {e}")
