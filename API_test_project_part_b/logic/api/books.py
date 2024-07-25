@@ -1,3 +1,5 @@
+import os
+
 from API_test_project_part_b.infra.api.api_wrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.logger import Logger
@@ -17,7 +19,9 @@ class Books:
         """
         self._request = request
         self._url = UtilsLogic().get_url_with_endpoint("Books")
-        self._config = ConfigProvider().load_from_file("../../fake_rest_config.json")
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
+        self._config = ConfigProvider().load_from_file(config_file_path)
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def get_all_books(self):
@@ -25,7 +29,7 @@ class Books:
             response = self._request.get_request(self._url)
             return response
         except Exception as e:
-            self._logger.error(f"Error getting all books")
+            self._logger.error(f"Error getting all books: {e}")
             return None
 
     def get_book_by_id(self, book_id):

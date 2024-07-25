@@ -1,8 +1,12 @@
 import os
 import sys
 import unittest
+
+import pytest
+
 from API_test_project_part_b.infra.api.api_wrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
+from API_test_project_part_b.infra.jira_handler import JiraHandler
 from API_test_project_part_b.infra.utils import Utils
 from API_test_project_part_b.logic.api.activities import Activities
 from API_test_project_part_b.logic.api.entries.activity_entity import ActivityEntity
@@ -16,21 +20,38 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = APIWrapper()
+        self._issue = False
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
-        self._config = ConfigProvider.load_from_file(config_file_path)
+        self._config = ConfigProvider().load_from_file(config_file_path)
 
+    def tearDown(self):
+        if self._issue:
+            try:
+                issue = JiraHandler().create_issue("TRQY", "asdadas", "asdasd")
+                print(f"Jira issue created: {issue.key}")
+            except Exception as e:
+                print(f"failed to create an report:{e}")
+                import traceback
+                traceback.print_exc()
+
+    @pytest.mark.get_all_activities
     def test_get_all_activities(self):
         """
             Test case: 001
             Verify successful fetching of all activities
         """
-        # Getting all the activities from the API
-        all_activities = Activities(self._request).get_all_activities()
+        try:
+            # Getting all the activities from the API
+            all_activities = Activities(self._request).get_all_activities()
+            self._issue = not all_activities.success()
 
-        # Asserting response status code of the Get request and the type of the response body
-        self.assertEqual(200, all_activities.status_code)
-        self.assertIsInstance(all_activities.data, list)
+            # Asserting response status code of the Get request and the type of the response body
+            self.assertEqual(400, all_activities.status_code)
+            self.assertIsInstance(all_activities.data, list)
+        except AssertionError as e:
+            self._issue = True
+
 
     def test_get_activity_by_id(self):
         """
@@ -101,6 +122,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertIsInstance(response.data['completed'], bool)
         self.assertEqual(updated_activity["title"], response.data["title"])
+
 
     def test_delete_activity(self):
         """

@@ -11,7 +11,7 @@ class AuthorEntity:
         """
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../../fake_rest_config.json')
-        self._config = ConfigProvider.load_from_file(config_file_path)
+        self._config = ConfigProvider().load_from_file(config_file_path)
         self._id = Utils().generate_random_number_within_range(tuple(self._config["author_id_range"]))
         self._idbook = Utils().generate_random_number_within_range(tuple(self._config["idbook_range"]))
         self._first_name = Utils().generate_random_string(8)

@@ -16,7 +16,7 @@ class TestFakeRestAPIAuthor(unittest.TestCase):
         self._request = APIWrapper()
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
-        self._config = ConfigProvider.load_from_file(config_file_path)
+        self._config = ConfigProvider().load_from_file(config_file_path)
 
     def test_get_all_authors(self):
         """

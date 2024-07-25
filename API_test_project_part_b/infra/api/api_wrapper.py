@@ -8,6 +8,7 @@ class APIWrapper:
     def __init__(self):
         self._logger = Logger("fake_rest_API_log").get_logger()
         self._request_response = None
+        self._issue = False
 
     def get_request(self, url, body=None, params=None, headers=None):
         try:
@@ -61,5 +62,3 @@ class APIWrapper:
         except Exception as e:
             self._logger.error(f"Error: {e}")
             return None
-
-

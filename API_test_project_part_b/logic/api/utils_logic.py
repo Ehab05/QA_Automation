@@ -8,7 +8,7 @@ class UtilsLogic:
         # Resolve the path dynamically to avoid issues with the current working directory
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
-        self._config = ConfigProvider.load_from_file(config_file_path)
+        self._config = ConfigProvider().load_from_file(config_file_path)
 
     def get_url_with_endpoint(self, endpoint):
         """

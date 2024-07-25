@@ -12,7 +12,7 @@ class Utils:
     def __init__(self):
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
-        self._config = ConfigProvider.load_from_file(config_file_path)
+        self._config = ConfigProvider().load_from_file(config_file_path)
         self._logger = Logger("fake_rest_api.log").get_logger()
 
     def generate_random_number_within_range(self, range_values: tuple):
