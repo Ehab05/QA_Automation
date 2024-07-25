@@ -1,64 +1,296 @@
-2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
-- activities - activities.py - get_activity_by_id - The generated activity id is:5 
-2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
-- activities - activities.py - get_activity_by_id - The generated activity id is:5 
-2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
-- activities - activities.py - get_activity_by_id - The generated activity id is:5 
-2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
-- activities - activities.py - get_activity_by_id - The generated activity id is:5 
-2024-07-23 10:52:40,755 - fake_rest_api.log - INFO 
-- activities - activities.py - get_activity_by_id - The generated activity id is:5 
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,491 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-bce85b5c833fc242adb0ebcd2ab3b3b2-3ecf45aa3a3abf4d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
-2024-07-23 10:52:41,816 - fake_rest_api.log - INFO 
-- activities - activities.py - post_activity - {'id': 12, 'title': ':ON2}QX;', 'dueDate': '2046-11-18T18:25:16.672607+00:00', 'completed': False}
+2024-07-23 13:38:05,665 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:27 
+2024-07-23 13:38:05,665 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:27 
+2024-07-23 13:38:05,665 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:27 
+2024-07-23 13:38:05,665 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:27 
+2024-07-23 13:38:05,665 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:27 
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:06,485 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:07,021 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:55,175 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:55,175 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:55,175 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:55,175 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:38:55,175 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:42:34,740 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:42:34,740 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:42:34,740 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:42:34,740 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-23 13:42:34,740 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:22,955 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:15 
+2024-07-24 18:08:22,955 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:15 
+2024-07-24 18:08:22,955 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:15 
+2024-07-24 18:08:22,955 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:15 
+2024-07-24 18:08:22,955 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:15 
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,024 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-24 18:08:24,696 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:10,486 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:29 
+2024-07-25 09:48:10,486 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:29 
+2024-07-25 09:48:10,486 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:29 
+2024-07-25 09:48:10,486 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:29 
+2024-07-25 09:48:10,486 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:29 
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:11,456 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:48:12,086 - fake_rest_api.log - ERROR 
+- activities - activities.py - post_activity - Error posting activity: 'ResponseWrapper' object has no attribute 'json'
+2024-07-25 09:54:56,447 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:4 
+2024-07-25 09:54:56,447 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:4 
+2024-07-25 09:54:56,447 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:4 
+2024-07-25 09:54:56,447 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:4 
+2024-07-25 09:54:56,447 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:4 
+2024-07-25 09:55:25,769 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:21 
+2024-07-25 09:55:25,769 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:21 
+2024-07-25 09:55:25,769 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:21 
+2024-07-25 09:55:25,769 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:21 
+2024-07-25 09:55:25,769 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:21 
+2024-07-25 10:38:28,615 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:10 
+2024-07-25 10:38:28,615 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:10 
+2024-07-25 10:38:28,615 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:10 
+2024-07-25 10:38:28,615 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:10 
+2024-07-25 10:38:28,615 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:10 
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,553 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-e692c40b1caef941acfdf1fe928d6895-0f23acf19c71894d-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}
+2024-07-25 10:38:29,991 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 24, 'title': 'Q#ZAc)e|', 'dueDate': '2027-05-22T02:15:35.399527+00:00', 'completed': False}

@@ -1,4 +1,4 @@
-from API_test_project_part_b.infra.api.apiwrapper import APIWrapper
+from API_test_project_part_b.infra.api.api_wrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.logger import Logger
 from API_test_project_part_b.logic.api.utils_logic import UtilsLogic
@@ -47,7 +47,7 @@ class Authors:
         """
         try:
             response = self._request.post_request(self._url, valid_author)
-            self._logger.info(f"{response.json()}")
+            self._logger.info(f"{response.data}")
             return response
         except Exception as e:
             self._logger.error(f"Error posting author: {e}")
