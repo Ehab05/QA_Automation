@@ -25,7 +25,7 @@ class Activities:
             response = self._request.get_request(self._url)
             return response
         except Exception as e:
-            self._logger.error(f"Error getting all activities: {e}")
+            self._logger.error(f"Error getting all the activities: {e}")
             return None
 
     def get_activity_by_id(self, activity_id):
