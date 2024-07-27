@@ -8,6 +8,6 @@
   "book_id_range": [1,200],
   "pagecount_range": [100, 20000],
   "number_of_book_keyvalues": 6,
-  "jira_url": "https://ehab-kalilproject.atlassian.net/jira/software/projects/KAN/boards/1",
+  "jira_url": "https://ehab05.atlassian.net",
   "jira_email": "ehabkalil5@gmail.com"
 }

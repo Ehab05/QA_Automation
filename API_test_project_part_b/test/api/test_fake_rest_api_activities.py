@@ -52,7 +52,6 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         except AssertionError as e:
             self._issue = True
 
-
     def test_get_activity_by_id(self):
         """
             Test case: 002
@@ -122,7 +121,6 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         self.assertEqual(200, response.status_code)
         self.assertIsInstance(response.data['completed'], bool)
         self.assertEqual(updated_activity["title"], response.data["title"])
-
 
     def test_delete_activity(self):
         """
