@@ -9,7 +9,7 @@ class JiraHandler:
     def __init__(self):
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../fake_rest_config.json')
-        secret_file_path = os.path.join(base_dir, '../secret.json')
+        secret_file_path = os.path.join(base_dir, '../private.json')
         self._config = ConfigProvider().load_from_file(config_file_path)
         self._secret = ConfigProvider().load_from_file(secret_file_path)
         self._jira_url = self._config["jira_url"]

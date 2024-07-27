@@ -21,6 +21,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         """
         self._request = APIWrapper()
         self._issue = False
+        self._error = None
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
         self._config = ConfigProvider().load_from_file(config_file_path)
@@ -28,7 +29,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
     def tearDown(self):
         if self._issue:
             try:
-                issue = JiraHandler().create_issue("TRQY", "asdaasdasds", "asdasd")
+                issue = JiraHandler().create_issue("TRQY", f"{self._error}", "asdasd")
                 print(f"Jira issue created: {issue.key}")
             except Exception as e:
                 print(f"failed to create an report:{e}")
@@ -51,6 +52,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             self.assertIsInstance(all_activities.data, list)
         except AssertionError as e:
             self._issue = True
+            self._error = f"The assertion failed :{e}"
 
     def test_get_activity_by_id(self):
         """
