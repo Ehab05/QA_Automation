@@ -1,0 +1,1 @@
+[32mINFO    [0m fake_rest_api.log:authors.py:38 The generated activity id is:161
