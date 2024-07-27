@@ -8,3 +8,101 @@
 - activities - activities.py - get_activity_by_id - The generated activity id is:17 
 2024-07-27 13:13:59,403 - fake_rest_api.log - INFO 
 - activities - activities.py - get_activity_by_id - The generated activity id is:17 
+2024-07-27 14:16:45,693 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:12 
+2024-07-27 14:16:45,693 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:12 
+2024-07-27 14:16:45,693 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:12 
+2024-07-27 14:16:45,693 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:12 
+2024-07-27 14:16:45,693 - fake_rest_api.log - INFO 
+- activities - activities.py - get_activity_by_id - The generated activity id is:12 
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:46,771 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'type': 'https://tools.ietf.org/html/rfc7231#section-6.5.1', 'title': 'One or more validation errors occurred.', 'status': 400, 'traceId': '00-6d1e86bcecc452418746ae6fbea49856-7c2135a5d7684447-00', 'errors': {'$.id': ['The JSON value could not be converted to System.Int32. Path: $.id | LineNumber: 0 | BytePositionInLine: 17.']}}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:16:47,259 - fake_rest_api.log - INFO 
+- activities - activities.py - post_activity - {'id': 17, 'title': '*^,:B;-q', 'dueDate': '2043-11-19T09:05:47.191+00:00', 'completed': False}
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:00,935 - fake_rest_api.log - INFO 
+- authors - authors.py - get_author_by_id - The generated activity id is:303 
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
+2024-07-27 14:17:01,493 - fake_rest_api.log - INFO 
+- authors - authors.py - post_author - {'id': 314, 'idBook': 154, 'firstName': 'Q(X[dI-:', 'lastName': 'Z]0mh6]e'}
