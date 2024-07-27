@@ -28,7 +28,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
     def tearDown(self):
         if self._issue:
             try:
-                issue = JiraHandler().create_issue("TRQY", "asdadas", "asdasd")
+                issue = JiraHandler().create_issue("TRQY", "asdaasdasds", "asdasd")
                 print(f"Jira issue created: {issue.key}")
             except Exception as e:
                 print(f"failed to create an report:{e}")
@@ -55,7 +55,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
     def test_get_activity_by_id(self):
         """
             Test case: 002
-            Verify successful fetching of an activity by its ID
+            Verify successful fetching of an activity by its ID.
         """
         # Generating a random activity ID within the accepted range
         activity_id = Utils().generate_random_number_within_range(tuple(self._config["activity_id_range"]))
