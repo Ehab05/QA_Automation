@@ -7,6 +7,7 @@ import pytest
 from API_test_project_part_b.infra.api.api_wrapper import APIWrapper
 from API_test_project_part_b.infra.config_provider import ConfigProvider
 from API_test_project_part_b.infra.jira_handler import JiraHandler
+from API_test_project_part_b.infra.logger import Logger
 from API_test_project_part_b.infra.utils import Utils
 from API_test_project_part_b.logic.api.activities import Activities
 from API_test_project_part_b.logic.api.entries.activity_entity import ActivityEntity
@@ -20,6 +21,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             APIWrapper This class provides methods for performing HTTP GET, POST, PUT, and DELETE requests.
         """
         self._request = APIWrapper()
+        self._logger = Logger("fake_rest_api.log").get_logger()
         self._issue = False
         self._error = None
         base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -29,14 +31,12 @@ class TestFakeRestAPIActivities(unittest.TestCase):
     def tearDown(self):
         if self._issue:
             try:
-                issue = JiraHandler().create_issue("TRQY", f"{self._error}", "asdasd")
-                print(f"Jira issue created: {issue.key}")
+                issue_description = f"{self._error} in Test Case: {self._testMethodName}"
+                issue = JiraHandler().create_issue("TRQY", issue_description, "An error occured during the test")
             except Exception as e:
-                print(f"failed to create an report:{e}")
-                import traceback
-                traceback.print_exc()
+                self._logger.error(f"The Reporting failed : {e}")
 
-    @pytest.mark.get_all_activities
+    @pytest.mark.get_all_asctivities
     def test_get_all_activities(self):
         """
             Test case: 001
@@ -52,7 +52,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             self.assertIsInstance(all_activities.data, list)
         except AssertionError as e:
             self._issue = True
-            self._error = f"The assertion failed :{e}"
+            self._error = f"The Assertion Failed : {e}"
 
     def test_get_activity_by_id(self):
         """
