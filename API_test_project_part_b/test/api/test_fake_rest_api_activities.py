@@ -33,7 +33,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
                 issue_description = JiraHandler().issue_description(self._error, self._testMethodName)
                 JiraHandler().create_issue("TRQY", issue_description, "An error occurred during the test")
             except Exception as e:
-                self._logger.error(f"The Reporting failed : {e}")
+                self._logger.error(f"The Reporting to jira failed : {e}")
 
     @pytest.mark.get_all_asctivities
     def test_get_all_activities(self):
