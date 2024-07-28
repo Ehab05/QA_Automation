@@ -8,7 +8,7 @@ from API_test_project_part_b.infra.config_provider import ConfigProvider
 class JiraHandler:
     def __init__(self):
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        config_file_path = os.path.join(base_dir, '../fake_rest_config.json')
+        config_file_path = os.path.join(base_dir, '../pet_store_management.json')
         secret_file_path = os.path.join(base_dir, '../private.json')
         self._config = ConfigProvider().load_from_file(config_file_path)
         self._secret = ConfigProvider().load_from_file(secret_file_path)

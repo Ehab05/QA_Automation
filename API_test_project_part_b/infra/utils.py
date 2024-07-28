@@ -2,6 +2,8 @@ import datetime
 import os
 import random
 import string
+import sys
+
 import pytz
 
 from API_test_project_part_b.infra.config_provider import ConfigProvider
@@ -11,7 +13,7 @@ from API_test_project_part_b.infra.logger import Logger
 class Utils:
     def __init__(self):
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
+        config_file_path = os.path.join(base_dir, '../fake_rest_config.json')
         self._config = ConfigProvider().load_from_file(config_file_path)
         self._logger = Logger("fake_rest_api.log").get_logger()
 
@@ -75,3 +77,19 @@ class Utils:
     @staticmethod
     def random_boolean():
         return random.choice([True, False])
+
+    def setup_environment(self, current_file, file_path, project_path):
+        """
+        Set up the environment by adding the project root to the system path
+        and returning the path to the configuration file.
+        """
+        # Get the project root directory (three levels up)
+        project_root = os.path.abspath(os.path.join(os.path.dirname(current_file), project_path))
+
+        # Add the project root directory to sys.path
+        sys.path.append(project_root)
+
+        # Path to the configuration file (two levels up from the current file)
+        config_file_path = os.path.abspath(os.path.join(project_root, file_path))
+
+        return config_file_path

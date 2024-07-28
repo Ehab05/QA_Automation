@@ -22,10 +22,9 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         """
         self._request = APIWrapper()
         self._logger = Logger("fake_rest_api.log").get_logger()
-        self._error = None
-        base_dir = os.path.dirname(os.path.abspath(__file__))
-        config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
-        self._config = ConfigProvider().load_from_file(config_file_path)
+        self._error = None  # This is used to detect the assertion failed for the jira report
+        config_path = Utils().setup_environment(__file__, '../../fake_rest_config.json', '../../../')
+        self._config = ConfigProvider().load_from_file(config_path)
 
     def tearDown(self):
         if self._error:
@@ -46,7 +45,7 @@ class TestFakeRestAPIActivities(unittest.TestCase):
             all_activities = Activities(self._request).get_all_activities()
 
             # Asserting response status code of the Get request and the type of the response body
-            self.assertEqual(400, all_activities.status_code)
+            self.assertEqual(200, all_activities.status_code)
             self.assertIsInstance(all_activities.data, list)
         except AssertionError as e:
             self._error = f"The Assertion Failed : {e}"
