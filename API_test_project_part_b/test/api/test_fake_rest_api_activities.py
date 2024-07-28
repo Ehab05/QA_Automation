@@ -22,17 +22,16 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         """
         self._request = APIWrapper()
         self._logger = Logger("fake_rest_api.log").get_logger()
-        self._issue = False
         self._error = None
         base_dir = os.path.dirname(os.path.abspath(__file__))
         config_file_path = os.path.join(base_dir, '../../fake_rest_config.json')
         self._config = ConfigProvider().load_from_file(config_file_path)
 
     def tearDown(self):
-        if self._issue:
+        if self._error:
             try:
-                issue_description = f"{self._error} in Test Case: {self._testMethodName}"
-                issue = JiraHandler().create_issue("TRQY", issue_description, "An error occured during the test")
+                issue_description = JiraHandler().issue_description(self._error, self._testMethodName)
+                JiraHandler().create_issue("TRQY", issue_description, "An error occurred during the test")
             except Exception as e:
                 self._logger.error(f"The Reporting failed : {e}")
 
@@ -45,13 +44,11 @@ class TestFakeRestAPIActivities(unittest.TestCase):
         try:
             # Getting all the activities from the API
             all_activities = Activities(self._request).get_all_activities()
-            self._issue = not all_activities.success()
 
             # Asserting response status code of the Get request and the type of the response body
             self.assertEqual(400, all_activities.status_code)
             self.assertIsInstance(all_activities.data, list)
         except AssertionError as e:
-            self._issue = True
             self._error = f"The Assertion Failed : {e}"
 
     def test_get_activity_by_id(self):

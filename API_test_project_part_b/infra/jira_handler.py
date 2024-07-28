@@ -27,3 +27,6 @@ class JiraHandler:
         }
 
         return self._auth_jira.create_issue(fields=issue_dict)
+
+    def issue_description(self, error, test_case):
+        return f"{error} in Test Case: {test_case}"
