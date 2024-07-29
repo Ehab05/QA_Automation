@@ -82,9 +82,6 @@ class Owner:
         return f"The owner {self._owners_name} have the following pets: {self._pets}"
 
 
-
-
-
-owner2= Owner("nawqeme","0541234540",[])
+owner2 = Owner("nawqeme", "0541234540", [])
 owner2.add_owner()
 print(owner2)

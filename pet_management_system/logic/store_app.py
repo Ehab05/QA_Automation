@@ -40,8 +40,6 @@ def add_pet():
     pet = Pet(name, species, age, owner, vaccinated)
 
 
-
-
 @app.route('services')
 def services():
     pass
