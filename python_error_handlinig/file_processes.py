@@ -1,5 +1,4 @@
 from python_error_handlinig.custom_exception import CustomException
-from python_error_handlinig.file_handler import FileHandler
 
 
 class FileProcesses:

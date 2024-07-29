@@ -14,8 +14,7 @@ class Logger:
 
         formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s \n- %(module)s - %(filename)s - %("
                                       "funcName)s - %(message)s")
-        log_file_path = os.path.join("../../" 'pet_store_management.log')
-        handler = logging.FileHandler(log_file_path)
+        handler = logging.FileHandler("pet_store_management.log")
         handler.setFormatter(formatter)
         self._logger.addHandler(handler)
 

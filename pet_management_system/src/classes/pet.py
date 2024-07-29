@@ -1,21 +1,16 @@
-from pet_management_system.config_provider import ConfigProvider
-from pet_management_system.infra.logger import Logger
+from pet_management_system.file_handler import FileHandler
+from pet_management_system.src.classes.utils import Utils
 
 
 class Pet:
     def __init__(self, name, species, age, owner, vaccinated: bool):
-        self._logger = Logger("pet_store_management.log").get_logger()
-        config_path = ("E:\\5-tech\\Autmation\\Automation_Bootcamp\\QA_Automation\\pet_management_system"
-                       "\\pet_store_management.json")
-        self._pet_store_management = ConfigProvider().load_from_file(config_path)
-        try:
-            self.name = name
-            self.species = species
-            self.age = age
-            self.owner = owner
-            self._vaccinated = vaccinated
-        except Exception as e:
-            self._logger.error(f"Error in pet details: {e}")
+        self._file_path = Utils().setup_environment(__file__, "../../pet_store_management.json", "../../")
+        self._pet_store_management = FileHandler(self._file_path, 'r+')
+        self.name = name
+        self.species = species
+        self.age = age
+        self.owner = owner
+        self._vaccinated = vaccinated
         self._vaccinated_pets = self._pet_store_management["vaccinated_pets"]
 
 
@@ -87,5 +82,4 @@ class Pet:
     def __str__(self):
         return f"Name: {self.name}\nAge: {self.age}\nOwner: {self.owner}"
 
-pet = Pet("dhod","birds",2,"ehab",False)
-pet.pet_got_vaccinated(pet)
+
