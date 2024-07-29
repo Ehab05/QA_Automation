@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
 
-from pet_management_system.logic.pet import Pet
+from pet_management_system.src.classes.pet import Pet
 
 app = Flask(__file__)
 

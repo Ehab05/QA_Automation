@@ -1,6 +1,4 @@
-import json
-
-from pet_management_system.infra.config_provider import ConfigProvider
+from pet_management_system.config_provider import ConfigProvider
 from pet_management_system.infra.logger import Logger
 
 

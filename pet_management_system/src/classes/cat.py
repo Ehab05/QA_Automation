@@ -1,4 +1,4 @@
-from pet_management_system.logic.pet import Pet
+from pet_management_system.src.classes.pet import Pet
 
 
 class Cat(Pet):

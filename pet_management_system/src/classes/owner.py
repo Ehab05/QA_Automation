@@ -1,13 +1,13 @@
 import json
 
-from pet_management_system.infra.config_provider import ConfigProvider
+from pet_management_system.config_provider import ConfigProvider
 from pet_management_system.infra.logger import Logger
 
 
 class Owner:
     def __init__(self, owners_name, phone_number, pets: list):
         self._logger = Logger("pet_store_management.log").get_logger()
-        self._config_path = "E:\\5-tech\\Autmation\\Automation_Bootcamp\\QA_Automation\\pet_management_system\\pet_store_management.json"
+        self._config_path = "/pet_management_system/pet_store_management.json"
         self._pet_store_management = ConfigProvider().load_from_file(self._config_path)
         self._owners_name = owners_name
         self._phone_number = phone_number
