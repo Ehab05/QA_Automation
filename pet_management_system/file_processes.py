@@ -4,10 +4,12 @@ from python_error_handlinig.custom_exception import CustomException
 
 
 class FileProcesses:
+    def __init__(self, file):
+        self._file = file
 
-    def read_json_file(self, file):
+    def read_json_file(self):
         try:
-            data = json.load(file)
+            data = json.load(self._file)
             return data
         except json.JSONDecodeError:
             raise CustomException("Error decoding JSON from the file")
@@ -16,11 +18,11 @@ class FileProcesses:
         except IOError:
             raise CustomException("Error with the file content")
         finally:
-            file.close()
+            self._file.close()
 
-    def write_json_file(self, file, data):
+    def write_json_file(self, data):
         try:
-            json.dump(data, file, indent=4)
+            json.dump(data, self._file, indent=4)
             return "The JSON content was successfully written"
         except TypeError:
             raise CustomException("Invalid data type for JSON serialization")
@@ -29,24 +31,24 @@ class FileProcesses:
         except IOError:
             raise CustomException("Error with the file content")
         finally:
-            file.close()
+            self._file.close()
 
-    def update_json_file(self, file, updates):
+    def update_json_file(self, updates: dict):
         try:
-            with open(file, 'r+') as file:
-                # Read existing data
-                data = self.read_json_file(file)
 
-                # Update data with provided updates
-                data.update(updates)
+            # Read existing data
+            data = self.read_json_file()
 
-                # Move the file pointer to the beginning of the file
-                file.seek(0)
+            # Update data with provided updates
+            data.update(updates)
 
-                # Clean added data
-                file.truncate()
-                # Write updated data back to the file
-                self.write_json_file(file, data)
+            # Move the file pointer to the beginning of the file
+            self._file.seek(0)
+
+            # Clean added data
+            self._file.truncate()
+            # Write updated data back to the file
+            self.write_json_file(data)
         except json.JSONDecodeError:
             raise CustomException("Error decoding JSON from the file")
         except PermissionError:
@@ -56,4 +58,8 @@ class FileProcesses:
         except TypeError:
             raise CustomException("Invalid data type for JSON serialization")
         finally:
-            file.close()
+            self._file.close()
+
+    def __getitem__(self, key):
+        data = self.read_json_file()
+        return data[key]

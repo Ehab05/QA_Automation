@@ -1,12 +1,13 @@
 import json
 from pet_management_system.file_handler import FileHandler
+from pet_management_system.file_processes import FileProcesses
 from pet_management_system.src.classes.utils import Utils
 
 
 class Owner:
     def __init__(self, owners_name, phone_number, pets: list):
         self._file_path = Utils().setup_environment(__file__, "../../pet_store_management.json", "../../")
-        self._pet_store_management = FileHandler(self._file_path, 'r+')
+        self._pet_store_management = FileHandler(self._file_path, 'w+')
         self._owners_name = owners_name
         self._phone_number = phone_number
         self._pets = pets
@@ -46,9 +47,10 @@ class Owner:
         self.pets.remove(pet)
 
     def add_owner(self):
-        self._pet_store_management["owners"].append(self.owner_to_dict())
-        with open(self._file_path, 'w') as f:
-            f.write(json.dumps(self._pet_store_management, indent=2))
+        file_processes = FileProcesses(self._pet_store_management)
+        owner = file_processes["owners"]
+        owner.append(self.owner_to_dict())
+        file_processes.update_json_file({"owners": owner})
 
     def get_all_pets(self):
         all_pets = []

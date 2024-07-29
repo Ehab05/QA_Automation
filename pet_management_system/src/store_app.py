@@ -20,26 +20,44 @@ def add_owner():
     pass
 
 
-@app.route('pets')
+@app.route('/pets')
 def pets():
     pass
 
 
-@app.route('/add_pet', methods=['POST'])
+@app.route('/add_pet', methods=['GET', 'POST'])
 def add_pet():
-    name = request.form['name']
-    species = request.form['species']
-    age = request.form['age']
-    owner = request.form['owner']
-    vaccinated = bool(request.form['vaccinated'])
+    if request.method == 'POST':
+        name = request.form['name']
+        species = request.form['species']
+        age = request.form['age']
+        owner = request.form['owner']
+        vaccinated = bool(request.form['vaccinated'])
 
-    if not name or not species or not age or not owner or not vaccinated:
-        flash("All fields are required.")
-        return redirect(url_for('add_pet'))
+        if not name or not species or not age or not owner or not vaccinated:
+            flash("All fields are required.")
+            return redirect(url_for('add_pet'))
 
-    pet = Pet(name, species, age, owner, vaccinated)
+        try:
+            age = int(age)
+        except ValueError:
+            flash("Age must be a number.")
+            return redirect(url_for('add_pet'))
+
+        if not species.isalpha():
+            flash("Species must contain only letters.")
+            return redirect(url_for('add_pet'))
+
+        pet = Pet(name, species, age, owner, vaccinated)
+        flash("Pet added successfully!")
+        return render_template('add_pet.html')
+    return render_template('add_pet.html')
 
 
-@app.route('services')
+@app.route('/services')
 def services():
     pass
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

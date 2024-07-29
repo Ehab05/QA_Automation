@@ -6,10 +6,10 @@ class Pet:
     def __init__(self, name, species, age, owner, vaccinated: bool):
         self._file_path = Utils().setup_environment(__file__, "../../pet_store_management.json", "../../")
         self._pet_store_management = FileHandler(self._file_path, 'r+')
-        self.name = name
-        self.species = species
-        self.age = age
-        self.owner = owner
+        self._name = name
+        self._species = species
+        self._age = age
+        self._owner = owner
         self._vaccinated = vaccinated
         self._vaccinated_pets = self._pet_store_management["vaccinated_pets"]
 
@@ -64,22 +64,22 @@ class Pet:
         return 7 * self.age
 
     def __eql__(self, other):
-        if self.name == other.name and self.species == other.species:
+        if self._name == other.name and self._species == other.species:
             return True
         else:
             return False
 
     def pet_to_dict(self):
         return {
-            "name": self.name,
-            "species": self.species,
-            "age": self.age,
-            "owner": self.owner,
+            "name": self._name,
+            "species": self._species,
+            "age": self._age,
+            "owner": self._owner,
             "vaccinated": self._vaccinated
 
         }
 
     def __str__(self):
-        return f"Name: {self.name}\nAge: {self.age}\nOwner: {self.owner}"
+        return f"Name: {self._name}\nAge: {self._age}\nOwner: {self._owner}"
 
 
