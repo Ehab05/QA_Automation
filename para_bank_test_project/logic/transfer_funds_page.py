@@ -1,12 +1,10 @@
 import random
-import time
+
 
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-from para_bank_test_project.infra.utils import Utils
 from para_bank_test_project.logic.base_app_page import BaseAppPage
 from selenium.webdriver.support.select import Select
 
