@@ -1,6 +1,0 @@
-File ../../fake_rest_config.json not found. Starting with an empty library.
-File E:\5-tech\Autmation\Automation_Bootcamp\QA_Automation\API_test_project_part_b\infra\../../fake_rest_config.json not found. Starting with an empty library.
-File E:\5-tech\Autmation\Automation_Bootcamp\QA_Automation\API_test_project_part_b\infra\../../fake_rest_config.json not found. Starting with an empty library.
-File E:\5-tech\Autmation\Automation_Bootcamp\QA_Automation\API_test_project_part_b\infra\../../fake_rest_config.json not found. Starting with an empty library.
-File E:\5-tech\Autmation\Automation_Bootcamp\QA_Automation\API_test_project_part_b\infra\../../fake_rest_config.json not found. Starting with an empty library.
-File E:\5-tech\Autmation\Automation_Bootcamp\QA_Automation\API_test_project_part_b\infra\../../fake_rest_config.json not found. Starting with an empty library.

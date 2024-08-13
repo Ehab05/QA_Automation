@@ -1,1 +1,0 @@
-[32mINFO    [0m fake_rest_api.log:activities.py:51 {'id': 30, 'title': 'uHKkP9"5', 'dueDate': '2026-05-10T21:58:33.52+00:00', 'completed': True}

@@ -1,6 +1,0 @@
-{
-  "base_url": "https://deckofcardsapi.com/api/deck/",
-  "deck_id": "c3c2vjejrnyx",
-  "cards_to_draw": "2",
-  "cards": "[AS, AH, 2D,2H,KH,KD]"
-}

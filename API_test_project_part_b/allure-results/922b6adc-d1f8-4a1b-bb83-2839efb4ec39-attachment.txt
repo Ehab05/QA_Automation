@@ -1,1 +1,0 @@
-[32mINFO    [0m fake_rest_api.log:activities.py:39 The generated activity id is:8

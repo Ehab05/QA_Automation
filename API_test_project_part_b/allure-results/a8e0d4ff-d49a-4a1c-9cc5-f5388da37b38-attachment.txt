@@ -1,1 +1,0 @@
-[32mINFO    [0m fake_rest_api.log:authors.py:50 {'id': 111, 'idBook': 31, 'firstName': 'd1;ecw,&', 'lastName': '#="ZAH<H'}
