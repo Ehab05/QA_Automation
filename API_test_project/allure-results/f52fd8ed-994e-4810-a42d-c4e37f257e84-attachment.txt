@@ -1,0 +1,1 @@
+[32mINFO    [0m fake_rest_api.log:authors.py:50 {'id': 47, 'idBook': 196, 'firstName': 'c7^%l$=%', 'lastName': '$Y.^@Ne+'}
